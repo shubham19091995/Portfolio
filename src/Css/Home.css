@@ -1,0 +1,34 @@
+.HomeMain {
+    display: flex;
+    flex-direction: row; /* Default layout for larger screens */
+    height: 100%;
+    width: 100%;
+  }
+  
+  .Half {
+    flex: 1;
+  }
+  
+  .passport-image {
+    width: auto; /* Make the image responsive */
+    height: 480px;
+    object-fit: fill; /* Ensures the image covers the area without stretching */
+    margin-left: 100px;
+    margin-right: auto;
+    margin-top: 40px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .HomeMain {
+      flex-direction: column; /* Stack the elements vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .passport-image {
+      width: auto; /* Adjust image size for smaller screens */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  

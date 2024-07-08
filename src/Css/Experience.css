@@ -1,0 +1,43 @@
+.imageCompany{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+img{
+height: 78px;    
+}
+
+.cognizantImage{
+    height: 35px;
+}
+
+b{
+    color: black;
+}
+
+.arrowcontent{
+    display:  flex;
+}
+
+.arrow{
+    width: 50px;
+}
+
+h5{
+    margin-left: 30px;
+    margin-right: 40px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cognizantImage{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+}
+
+.button{
+    margin-left: 50px;
+}
