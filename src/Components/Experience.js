@@ -53,25 +53,26 @@ function Experience() {
             </div>
             
             <div className='arrowcontent'>
-              <div className='arrow'>
+            <div className='arrow'>
               
               
-              </div>
-              <div className='content'>
-              <h3>Full-Time : 2 Years 7 Months</h3>
+            </div>
+            <div className='content'>
+            <h3>Full-Time : 2 Years 7 Months</h3>
             <h3>Custom Software Engineering Specialist</h3>
             <h4>May-2024 to Present : 3 Months</h4>
             <h4>Chennai, Tamil Nadu , India</h4>
             <h3>Custom Software Development Senior Analyst</h3>
             <h4>Feb-2022 to May-2024 : 2 Years 4 Months</h4>
-              </div>
+            </div>
             </div>
             
             <h5>As as a Java backend developer in the banking domain, specializing in microservices architecture with Java 21. <br/> Maintained end-to-end processes from development to deployment, utilizing Kubernetes and Docker for optimized configurations. <br/> Hands-on experience with CI/CD pipelines and their configurations; analyzed business requirements and translated them into technical specifications.</h5>
             <React.Fragment>
-      <Button variant="outlined" sx={{ marginLeft:"50px",justifyContent:"center",alignItems:"center" }} onClick={handleClickOpen}>
+      <Button variant="outlined" sx={{ margin:"50px",justifyContent:"center",alignItems:"center" }} onClick={handleClickOpen}>
       Click here for exact and detailed Information of my Role & Technology I Used
       </Button>
+      
       <BootstrapDialog1
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
@@ -153,7 +154,7 @@ function Experience() {
             As a Java developer on the Identity and Access Management (IAM) team, I integrated third-party providers for authentication and authorization using OAuth security with Spring Boot.<br></br> Managed AWS infrastructure (EC2, S3, CloudWatch, Route 53, security groups .. etc), and delivered end-to-end backend development in both monolithic and microservices architectures .
         </h5>
         <React.Fragment>
-      <Button variant="outlined" style={{marginLeft:"50px",marginBottom:"50px"}} onClick={handleCognizantClickOpen}>
+      <Button variant="outlined" style={{margin:"50px",marginBottom:"50px"}} onClick={handleCognizantClickOpen}>
       Click here for exact and detailed Information of my Role & Technology I Used
       </Button>
       <BootstrapDialog
