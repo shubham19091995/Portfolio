@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@fontsource/roboto": "^5.0.13",
@@ -14,7 +15,11 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
+    "emailjs": "^4.0.3",
+    "emailjs-com": "^3.2.0",
+    "nodemailer": "^6.9.14",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-collapsed": "^4.1.2",
@@ -23,6 +28,7 @@
     "react-pdf-viewer": "^0.1.0",
     "react-router-dom": "^6.24.1",
     "react-scripts": "5.0.1",
+    "stream-browserify": "^3.0.0",
     "styled-components": "^6.1.11",
     "web-vitals": "^2.1.4"
   },

@@ -14,11 +14,11 @@ import { useNavigate } from 'react-router-dom';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import TextField from '@mui/material/TextField';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import emailjs from '@emailjs/browser'
 
 const pages = ['Home', 'Experience & Certifications', 'Resume', 'Documents'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -47,18 +47,31 @@ function ResponsiveAppBar() {
     setOpenMailDialog(false);
   };
 
-  const sendMailToMe = () => {
+   function sendMailToMe(mail1,message1) {
+
     const mail = document.getElementById('filled-hidden-label-normal');
     const message = document.getElementById('fullWidth');
-    if (mail && message) {
-      const mailValue = mail.value;
-      const messageValue = message.value;
-      console.log(mailValue);
-      console.log(messageValue);
-    } else {
-      console.error('Mail or message field not found');
-    }
+
+        const serviceId="service_gdzmz1e";
+        const tenplateId="template_ltqud2b";
+        const publickey="JP2WQUe1UyGoshaYV";
+
+        const templateParams={
+          sender_email:mail1,
+          receiver_email:"sr1226035@gmail.com",
+          body:message1
+      }
+ 
+    
+    emailjs.send(serviceId,tenplateId,templateParams,publickey)
+    .then((response)=>{
+        window.alert("Mail Send Successfully")
+    })
+    .catch((error)=>{
+      window.alert('Error sending email:',error);
+    })
   };
+
 
   const pageNavigate = (page) => {
     console.log(page);
@@ -165,15 +178,15 @@ function ResponsiveAppBar() {
                   <TextField
                     sx={{ marginBottom: '20px' }}
                     fullWidth
-                    id="filled-hidden-label-normal"
+                    id="emails"
                     placeholder="Enter your/sender email."
                     variant="filled"
                   />
-                  <TextField fullWidth label="Type your message" id="fullWidth" />
+                  <TextField fullWidth label="Type your message" id="message" />
                 </DialogContent>
                 <DialogActions>
                   <Button onClick={handleCloseMailDialog}>Cancel</Button>
-                  <Button onClick={sendMailToMe}>Send Mail</Button>
+                  <Button onClick={()=>sendMailToMe(document.getElementById('emails').value,document.getElementById('message').value)}>Send Mail</Button>
                 </DialogActions>
               </Dialog>
             </Tooltip>

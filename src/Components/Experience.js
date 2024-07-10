@@ -69,7 +69,7 @@ function Experience() {
             
             <h5>As as a Java backend developer in the banking domain, specializing in microservices architecture with Java 21. <br/> Maintained end-to-end processes from development to deployment, utilizing Kubernetes and Docker for optimized configurations. <br/> Hands-on experience with CI/CD pipelines and their configurations; analyzed business requirements and translated them into technical specifications.</h5>
             <React.Fragment>
-      <Button variant="outlined" style={{marginLeft:"50px"}} onClick={handleClickOpen}>
+      <Button variant="outlined" sx={{ marginLeft:"50px",justifyContent:"center",alignItems:"center" }} onClick={handleClickOpen}>
       Click here for exact and detailed Information of my Role & Technology I Used
       </Button>
       <BootstrapDialog1
