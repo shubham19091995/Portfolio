@@ -3,6 +3,7 @@
     flex-direction: row; /* Default layout for larger screens */
     height: 100%;
     width: 100%;
+    margin-top: 100px;
   }
   
   .Half {

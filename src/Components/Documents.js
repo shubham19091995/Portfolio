@@ -56,7 +56,7 @@ const rows = [
 function Documents() {
   return (
     
-    <div>
+    <div style={{marginTop:'100px'}} >
 <Box >
       <DataGrid
         rows={rows}

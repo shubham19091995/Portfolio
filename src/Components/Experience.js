@@ -45,7 +45,7 @@ function Experience() {
     setOpenCognizant(false);
   };
   return (
-    <div>
+    <div className='experienceMain'>
         <div className='accenture'>
             <div className='imageCompany'>
             <img src='https://1000logos.net/wp-content/uploads/2021/04/Accenture-logo.png'></img>
