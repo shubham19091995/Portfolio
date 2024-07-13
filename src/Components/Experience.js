@@ -85,10 +85,10 @@ function Experience() {
             <h4>Feb-2022 to May-2024 : 2 Years 4 Months</h4>
             </div>
             </div>
-            <button className='certificateButton' onClick={()=>viewAWSCertificate()}>AWS Certified Solution Architect Certificate</button> 
+            <button className='certificateButton' onClick={()=>viewAWSCertificate()}>AWS Certified Solutions Architect Certificate</button> 
 
         <Dialog open={awsCeritficate} onClose={awsCeritficateClose}>
-            <DialogTitle>AWS Certified Solution Architect Certificate</DialogTitle>
+            <DialogTitle>AWS Certified Solutions Architect Certificate</DialogTitle>
             <DialogContent>
             <div style={{marginTop:'68px' , width:'fit-content', height:'fit-content'}}>
   <iframe src='https://firebasestorage.googleapis.com/v0/b/myportfolio-ee684.appspot.com/o/AWS%20Certified%20Solutions%20Architect%20-%20Associate%20certificate.pdf?alt=media&token=77779855-fd3e-414e-8d9e-9117ad7a2ceb' width="fit-content" height="400px"></iframe>
