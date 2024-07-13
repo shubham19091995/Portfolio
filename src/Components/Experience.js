@@ -90,8 +90,8 @@ function Experience() {
         <Dialog open={awsCeritficate} onClose={awsCeritficateClose}>
             <DialogTitle>AWS Certified Solutions Architect Certificate</DialogTitle>
             <DialogContent>
-            <div style={{marginTop:'68px' , width:'fit-content', height:'fit-content'}}>
-  <iframe src='https://firebasestorage.googleapis.com/v0/b/myportfolio-ee684.appspot.com/o/AWS%20Certified%20Solutions%20Architect%20-%20Associate%20certificate.pdf?alt=media&token=77779855-fd3e-414e-8d9e-9117ad7a2ceb' width="fit-content" height="400px"></iframe>
+            <div style={{marginTop:'68px' , width:'100%', height:'100%'}}>
+  <iframe src='https://firebasestorage.googleapis.com/v0/b/myportfolio-ee684.appspot.com/o/AWS%20Certified%20Solutions%20Architect%20-%20Associate%20certificate.pdf?alt=media&token=77779855-fd3e-414e-8d9e-9117ad7a2ceb' width="100%" height="1200px"></iframe>
 </div>
             </DialogContent>
             <DialogActions>
@@ -187,7 +187,7 @@ function Experience() {
             <DialogTitle>HackerRank (Intermediate) Problem Solving Certificate</DialogTitle>
             <DialogContent>
             <div style={{marginTop:'68px' , width:'fit-content', height:'fit-content'}}>
-  <iframe src='https://firebasestorage.googleapis.com/v0/b/myportfolio-ee684.appspot.com/o/HackerRankProblemSolving.pdf?alt=media&token=f86f9b5c-0586-4c4f-9671-30dca19d4994' width="fit-content" height="400px"></iframe>
+  <iframe src='https://firebasestorage.googleapis.com/v0/b/myportfolio-ee684.appspot.com/o/HackerRankProblemSolving.pdf?alt=media&token=f86f9b5c-0586-4c4f-9671-30dca19d4994' width="fit-content" height="1200px"></iframe>
 </div>
             </DialogContent>
             <DialogActions>
