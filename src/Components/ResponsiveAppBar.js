@@ -94,7 +94,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="fixed">
+    <AppBar position="fixed" sx={{backgroundColor:'chocolate',borderRadius:'2px'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -168,7 +168,7 @@ function ResponsiveAppBar() {
             <Tooltip title="Open settings">
               <Button
                 onClick={handleOpenMailDialog}
-                sx={{ my: 2, color: 'white', display: 'block', backgroundColor: 'darkblue' }}
+                sx={{ my: 2, color: 'white', display: 'block', backgroundColor: 'Brown' }}
               >
                 Mail Me
               </Button>

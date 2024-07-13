@@ -45,3 +45,50 @@ h5{
 .button{
     margin-left: 50px;
 }
+
+
+.certificateButton{
+    margin-left: 30px;
+    font-weight: bolder;
+    border: none;
+    background-color: chocolate;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 4, 5);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.certificateButton:hover{
+    margin-left: 30px;
+    font-weight: bolder;
+    border: none;
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+@media (max-width: 768px) {
+    .certificateButton{
+        margin-left: 30px;
+        font-weight: bolder;
+        border: none;
+        background-color: chocolate;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 3, 4);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .certificateButton:hover{
+        margin-left: 30px;
+        font-weight: bolder;
+        border: none;
+        background-color: yellow;
+        border-radius: 5px;
+        padding: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  }
+  

@@ -9,6 +9,7 @@ import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
+import { DialogContentText } from '@mui/material';
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
     padding: theme.spacing(2),
@@ -29,10 +30,19 @@ function Experience() {
 
   const [openAccenture, setOpenAccenture] = useState(false);
   const [openCognizant, setOpenCognizant] = useState(false);
+  const [awsCeritficate,setAwsCertificate] =useState(false);
+  const [hackerrankproblemsolving,sethackerrankproblemsolving] =useState(false);
 
+  const hackerrankproblemsolvingopen=()=>{
+    sethackerrankproblemsolving(true);
+  } 
   const handleClickOpen = () => {
     setOpenAccenture(true);
   };
+
+  const viewAWSCertificate=()=>{
+    setAwsCertificate(true);
+  }
   const handleClose = () => {
     setOpenAccenture(false);
   };
@@ -44,8 +54,17 @@ function Experience() {
   const handleCognizantClose = () => {
     setOpenCognizant(false);
   };
+
+  const awsCeritficateClose=()=>{
+    setAwsCertificate(false);
+  }
+
+  const hackerrankproblemsolvinClose=()=>{
+    sethackerrankproblemsolving(false);
+  }
   return (
     <div className='experienceMain'>
+        
         <div className='accenture'>
             <div className='imageCompany'>
             <img src='https://1000logos.net/wp-content/uploads/2021/04/Accenture-logo.png'></img>
@@ -66,6 +85,20 @@ function Experience() {
             <h4>Feb-2022 to May-2024 : 2 Years 4 Months</h4>
             </div>
             </div>
+            <button className='certificateButton' onClick={()=>viewAWSCertificate()}>AWS Certified Solution Architect Certificate</button> 
+
+        <Dialog open={awsCeritficate} onClose={awsCeritficateClose}>
+            <DialogTitle>AWS Certified Solution Architect Certificate</DialogTitle>
+            <DialogContent>
+            <div style={{marginTop:'68px' , width:'fit-content', height:'fit-content'}}>
+  <iframe src='https://firebasestorage.googleapis.com/v0/b/myportfolio-ee684.appspot.com/o/AWS%20Certified%20Solutions%20Architect%20-%20Associate%20certificate.pdf?alt=media&token=77779855-fd3e-414e-8d9e-9117ad7a2ceb' width="fit-content" height="400px"></iframe>
+</div>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={awsCeritficateClose} color="primary">Close</Button>
+            </DialogActions>
+        </Dialog>
+
             
             <h5>As as a Java backend developer in the banking domain, specializing in microservices architecture with Java 21. <br/> Maintained end-to-end processes from development to deployment, utilizing Kubernetes and Docker for optimized configurations. <br/> Hands-on experience with CI/CD pipelines and their configurations; analyzed business requirements and translated them into technical specifications.</h5>
             <React.Fragment>
@@ -149,7 +182,18 @@ function Experience() {
 
           </div>
         </div>
-        
+        <button className='certificateButton' onClick={()=>hackerrankproblemsolvingopen()}>HackerRank (Intermediate) Problem Solving Certificate</button> 
+        <Dialog open={hackerrankproblemsolving} onClose={hackerrankproblemsolvinClose}>
+            <DialogTitle>HackerRank (Intermediate) Problem Solving Certificate</DialogTitle>
+            <DialogContent>
+            <div style={{marginTop:'68px' , width:'fit-content', height:'fit-content'}}>
+  <iframe src='https://firebasestorage.googleapis.com/v0/b/myportfolio-ee684.appspot.com/o/HackerRankProblemSolving.pdf?alt=media&token=f86f9b5c-0586-4c4f-9671-30dca19d4994' width="fit-content" height="400px"></iframe>
+</div>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={hackerrankproblemsolvinClose} color="primary">Close</Button>
+            </DialogActions>
+        </Dialog>
         <h5>
             As a Java developer on the Identity and Access Management (IAM) team, I integrated third-party providers for authentication and authorization using OAuth security with Spring Boot.<br></br> Managed AWS infrastructure (EC2, S3, CloudWatch, Route 53, security groups .. etc), and delivered end-to-end backend development in both monolithic and microservices architectures .
         </h5>
