@@ -112,7 +112,7 @@ function Experience() {
         open={openAccenture}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-        Role in Accenture and Technologies I used
+        Role in Accenture and Technology I used
         </DialogTitle>
         <IconButton
           aria-label="close"
@@ -158,7 +158,7 @@ function Experience() {
           <b>11.</b> Since' Point of all development is for implementation of multiple product using same system . So we did Backward Compatibility Development.  
           </Typography>
           <Typography gutterBottom>
-          <b>Technologies & Tools : </b> Java 11, Java 21, Spring Boot, Spring Batch, Kafka, Docker, Mongo DB, MySql, Redis,  Kubernetes, OpenShift, Linux, Postman,Intellij , LLD & HLD , Debugging & Curcuit Breaker and Api Gateways etc.
+          <b>Technology & Tools : </b> Java 11, Java 21, Spring Boot, Spring Batch, Kafka, Docker, Mongo DB, MySql, Redis,  Kubernetes, OpenShift, Linux, Postman,Intellij , LLD & HLD , Debugging & Curcuit Breaker and Api Gateways etc.
           </Typography>
         </DialogContent>
         <DialogActions>
@@ -207,7 +207,7 @@ function Experience() {
         open={openCognizant}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-          Role in Cognizant and Technologies I used
+          Role in Cognizant and Technology I used
         </DialogTitle>
         <IconButton
           aria-label="close"
@@ -245,7 +245,7 @@ function Experience() {
           </Typography>
           
           <Typography gutterBottom>
-          <b>Technologies & Tools : </b> Java 11, Java 21, Spring Boot, Spring Batch, Kafka, Docker, Mongo DB, MySql, Redis,  Amazon Web Services ( Ec2, SNS, SQS, S3 , Security groups , Route 53 etc ), Linux, Postman,Intellij , LLD & HLD , Debugging & Curcuit Breaker and Api Gateways etc.
+          <b>Technology & Tools : </b> Java 11, Java 21, Spring Boot, Spring Batch, Kafka, Docker, Mongo DB, MySql, Redis,  Amazon Web Services ( Ec2, SNS, SQS, S3 , Security groups , Route 53 etc ), Linux, Postman,Intellij , LLD & HLD , Debugging & Curcuit Breaker and Api Gateways etc.
           </Typography>
         </DialogContent>
         <DialogActions>
