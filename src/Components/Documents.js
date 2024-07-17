@@ -1,7 +1,8 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { DataGrid } from '@mui/x-data-grid';
-
+import { hover } from '@testing-library/user-event/dist/hover';
+import '../Css/Document.css'
 const columns = [
   { field: 'id', headerName: 'ID', width: 100 },
   {
@@ -23,6 +24,7 @@ const columns = [
     editable: true,
   },
 ];
+
 
 const rows = [
   { id: 1, documentName: '10th Marksheet', uploadDate: '6th July 2024', Token: "Provide Token , Then you can download ." },
@@ -53,7 +55,10 @@ const rows = [
 ];
 
 
+
 function Documents() {
+  const [selectedItems,setSelectedItems]= React.useState([]);
+
   return (
     
     <div style={{marginTop:'100px'}} >
@@ -67,12 +72,17 @@ function Documents() {
               pageSize: 10,
             },
           },
-        }}
+        }}  
         pageSizeOptions={[10]}
         checkboxSelection
         disableRowSelectionOnClick
+        onRowSelectionModelChange={(datas)=>{
+          setSelectedItems(datas)
+        }}
+        editable={(val)=>console.log(val)}
       />
     </Box>
+      <div style={{display:'flex',justifyContent:'center'}}>  <button className='sampleButton'  onClick={()=>{console.log(selectedItems)}}> Download Files</button>  </div>  
     <h1>Mail me at sr1226035@gmail.com for token , If you need document .</h1>
     </div>
   );
