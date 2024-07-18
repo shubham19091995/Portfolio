@@ -18,7 +18,7 @@ function AboutMe() {
           <h1>About Me</h1>
             <h3>Hello' My name is <b>Shubham Raj</b>.</h3>
             <h3>I am working as <b className='roles'>{roles[currentRoleIndex]}</b>.</h3>
-            <h3> I have 6 Years of <b>Backend Development</b> experience.</h3>
+            <h3> I have <span className='roles'>6 Years of</span> <b>Backend Development</b> experience.</h3>
             <h3>I born in <b>Bihar , Patna</b>.</h3>
             <h3>I did my Graduation in EEE ( Electrical and Electronics Engineering ) from <strong>Sathyabama University , Chennai </strong> <b>2014-2018</b> batch.</h3>
             <h3> I worked on Bank Domain , IAM ( Identity and Authentication ) Domain.</h3>
