@@ -13,6 +13,15 @@ function Home() {
             alt="Shubham Raj Image"
           />
         </div>
+        <div className='HalfData'>
+          <h3><b>Email :</b> <span>sr1226035@gmail.com</span></h3>
+          <h3><b>Phone No :</b> <span>8248154199</span> </h3>
+          <h3><b>Birthday :</b> <span>19th Oct</span> </h3>
+          <h3><b>Location :</b> <span>Chennai, India</span>  </h3>
+        </div>
+      </div>
+      <div className='middleLine' style={{backgroundColor:'white',width:'20px', marginLeft:'5px',marginRight:'25px',backgroundColor:'chocolate'}}>
+        
       </div>
       <div className="Half">
         <AboutMe />
