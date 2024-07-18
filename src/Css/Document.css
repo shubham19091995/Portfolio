@@ -25,3 +25,37 @@
     font-size: large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
+@media(max-width:768px){
+
+    .sampleButton{
+        padding-left: 50px;
+        padding-right: 50px;
+        border: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: chocolate;
+        color: white;
+        font-weight: bolder;
+        font-size: large;
+        border-radius: 4px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .sampleButton:hover{
+        padding-left: 50px;
+        padding-right: 50px;
+        border: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: brown;
+        color: white;
+        border-radius: 4px;
+        font-weight: bolder;
+        font-size: large;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+
+}
